@@ -16,6 +16,7 @@
     border-radius: 25px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.21);
     padding: 20px;
+    transition: 0.3s;
     &:hover {
       transform: scale(1.1);
     }
@@ -68,7 +69,6 @@
     }
     .profile__card {
       width: 90%;
-      transition: 0.3s;
       text-align: left;
       padding: 20px;
       .card__left {
@@ -97,7 +97,6 @@
           .followers__number {
             font-style: italic;
             text-align: center;
-
           }
         }
       }
