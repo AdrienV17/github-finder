@@ -1,10 +1,9 @@
-import {  put, takeLatest } from "redux-saga/effects";
+import { put, takeLatest } from "redux-saga/effects";
 import { profileActionTypes } from "./profile.types";
 import { payloadAction } from "../../assets/functions";
 
 export function* fetchProfileAsync(action) {
   try {
-    yield console.log(action);
     const gitRef = yield fetch(
       `https://api.github.com/users/${action.payload}`
     );

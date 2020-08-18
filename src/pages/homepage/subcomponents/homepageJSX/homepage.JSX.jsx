@@ -13,7 +13,6 @@ import Spinner from "../../../../components/spinner/spinner.component";
 import Default404 from "../../../../components/default-404/default-404.component";
 
 const HomepageJSX = ({ isProfile, isFetching, notFoundMessage }) => {
-  console.log(isProfile);
   const default404Message = {
     title: 'User Not Found',
     subtitle:'Please Try Again or try with another Github Profile'
