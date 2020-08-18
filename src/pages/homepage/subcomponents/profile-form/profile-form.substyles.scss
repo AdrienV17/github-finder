@@ -1,0 +1,29 @@
+.body__search {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2em;
+    width: 100%;
+    .search__input {
+      width: 50%;
+      input {
+        width: 90%;
+        height: 50px;
+        border: solid transparent;
+        border-radius: 50px;
+        font-size: 40px;
+        padding: 15px;
+        color: #5C0072;
+        font-style: italic;
+        &::placeholder {
+          color: #5b007296;
+          font-style: italic;
+        }
+      }
+    }
+    .search__button {
+      height: 50px;
+      width: 10%;
+      font-size: 30px;
+    }
+  }

@@ -1,0 +1,40 @@
+.footer{
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  .footer__header{
+      .header__title{
+        font-size: 135px;
+        font-family: Yellowtail;
+      }
+  }
+  .footer__social-media{
+    .social-media__social{
+      display: inline-block;
+      padding: 0 10px;
+      border-right: 2px solid white;
+      font-size: 30px;
+      font-weight: 700;
+      transition: 0.3s;
+      &:last-child{
+        border-right: none;
+      }
+      i{
+        margin-right: 5px;
+      }
+      &:hover{
+        color: #5C0072;
+      }
+    }
+  }
+  .footer__copyright{
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+  }
+}

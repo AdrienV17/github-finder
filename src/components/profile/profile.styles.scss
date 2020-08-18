@@ -1,0 +1,66 @@
+.homepage__profile{
+    margin-top: 5em;
+    .profile__header{
+      .header__title{
+        font-family: Yellowtail;
+        font-size: 75px;
+      }
+      margin-bottom: 20px;
+    }
+    .profile__card{
+      background-color: white;
+      width: 50%;
+      margin: 0 auto;
+      color: black;
+      border-radius: 25px;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
+      padding: 20px;
+      .card__left{
+        display: inline-block;
+        width: 50%;
+        .left__avatar{
+          background-color: black;
+          padding: 75px;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          margin: 10px auto;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
+        }
+        .left__text{
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 1.5;
+          .text__username{
+            font-style: italic;
+          }
+        }
+      }
+      .card__right{
+        display: inline-block;
+        width: 50%;
+        .right__repos{
+          font-size: 45px;
+          .repos__title{
+            font-weight: 700;
+            font-style: italic;
+          }
+          .repos__number{
+            font-weight: 700;
+
+          }
+        }
+        .right__followers{
+          font-size: 45px;
+          .followers__title{
+            font-weight: 700;
+            font-style: italic;
+          }
+          .followers__number{
+            font-weight: 700;
+
+          }
+        }
+      }
+    }
+  }

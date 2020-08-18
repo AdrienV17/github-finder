@@ -1,0 +1,20 @@
+.custom-button{
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-size: inherit;
+    height: inherit;
+    width: 100%;
+    color: #5c0072;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.8);
+    }
+}

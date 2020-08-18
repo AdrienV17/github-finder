@@ -1,0 +1,29 @@
+.homepage {
+  color: white;
+  padding-bottom: 20px;
+  .homepage__header {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header__github {
+      font-size: 150px;
+    }
+    .header__line {
+      border: 5px solid white;
+      height: 150px;
+      margin: 30px;
+    }
+    .header__finder {
+      font-family: Yellowtail;
+      font-size: 150px;
+    }
+  }
+  .homepage__body {
+    .body__subtitle {
+      font-size: 50px;
+    }
+    
+  }
+  
+}
