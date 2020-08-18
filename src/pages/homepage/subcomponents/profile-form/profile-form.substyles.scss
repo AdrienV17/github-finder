@@ -7,6 +7,8 @@
     .search__input {
       width: 50%;
       input {
+        font-family: Raleway;
+        font-weight: bolder;
         width: 90%;
         height: 50px;
         border: solid transparent;
@@ -25,5 +27,29 @@
       height: 50px;
       width: 10%;
       font-size: 30px;
+    }
+    @media screen and (max-width:900px) {
+      display: block;
+      .search__input {
+        width: 100%;
+        input {
+          width: 80%;
+     
+        font-size: 20px;
+        
+     
+      }
+    }
+    .search__button {
+      height: 50px;
+      width: 100%;
+      font-size: 30px;
+      margin-top: 1em;
+      button{
+        width: 20%;
+        min-width: 128px;
+
+      }
+    }
     }
   }

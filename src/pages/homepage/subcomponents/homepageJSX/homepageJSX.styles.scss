@@ -1,14 +1,14 @@
 .homepage {
   color: white;
   padding-bottom: 20px;
+  min-height: 100vh;
   .homepage__header {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    .header__github {
-      font-size: 150px;
-    }
+    font-size: 150px;
+   
     .header__line {
       border: 5px solid white;
       height: 150px;
@@ -16,14 +16,32 @@
     }
     .header__finder {
       font-family: Yellowtail;
-      font-size: 150px;
     }
   }
   .homepage__body {
     .body__subtitle {
       font-size: 50px;
     }
-    
   }
-  
+  @media screen and(max-width:900px) {
+    
+  .homepage__header {
+    font-size: 60px;
+    
+    
+    .header__line {
+      border: 3px solid white;
+      height: 75px;
+      margin: 15px;
+    }
+    .header__finder {
+      font-family: Yellowtail;
+    }
+  }
+  .homepage__body {
+    .body__subtitle {
+      font-size: 30px;
+    }
+  }
+  }
 }

@@ -7,6 +7,7 @@
   justify-content: center;
   background-color: black;
   color: white;
+  min-height: 350px;
   .footer__header{
       .header__title{
         font-size: 135px;
@@ -36,5 +37,22 @@
     position: absolute;
     bottom: 0;
     font-size: 10px;
+  }
+  @media screen and(max-width:900px) {
+    
+  .footer__header{
+      .header__title{
+        font-size: 90px;
+      }
+  }
+  .footer__social-media{
+    .social-media__social{
+      display: block;
+      border: none;
+      line-height: 1.5;
+     
+    }
+  }
+  
   }
 }

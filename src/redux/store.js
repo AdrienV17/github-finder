@@ -2,7 +2,6 @@ import {logger} from 'redux-logger';
 import { createStore, applyMiddleware } from 'redux';
 import { rootReducer } from './root-reducer';
 import createSagaMiddleWare from 'redux-saga'
-import { fetchProfileAsync } from './profile/profile.saga';
 import rootSaga from './root-saga';
 
 const sagaMiddleWare = createSagaMiddleWare()

@@ -1,66 +1,106 @@
-.homepage__profile{
-    margin-top: 5em;
-    .profile__header{
-      .header__title{
-        font-family: Yellowtail;
-        font-size: 75px;
-      }
-      margin-bottom: 20px;
+.homepage__profile {
+  margin-top: 5em;
+  .profile__header {
+    .header__title {
+      font-family: Yellowtail;
+      font-size: 75px;
     }
-    .profile__card{
-      background-color: white;
+    margin-bottom: 20px;
+  }
+  .profile__card {
+    font-weight: 700;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.21);
+    padding: 20px;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+    .card__left {
+      display: inline-block;
       width: 50%;
-      margin: 0 auto;
-      color: black;
-      border-radius: 25px;
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
-      padding: 20px;
-      .card__left{
-        display: inline-block;
-        width: 50%;
-        .left__avatar{
-          background-color: black;
-          padding: 75px;
-          border-radius: 50%;
-          width: 100px;
-          height: 100px;
-          margin: 10px auto;
-          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
-        }
-        .left__text{
-          font-weight: 700;
-          font-size: 25px;
-          line-height: 1.5;
-          .text__username{
-            font-style: italic;
-          }
+      .left__avatar {
+        background-color: black;
+        padding: 75px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.21);
+      }
+      .left__text {
+        font-size: 25px;
+        line-height: 1.5;
+        .text__username {
+          font-style: italic;
         }
       }
-      .card__right{
-        display: inline-block;
-        width: 50%;
-        .right__repos{
-          font-size: 45px;
-          .repos__title{
-            font-weight: 700;
+    }
+    .card__right {
+      display: inline-block;
+      width: 50%;
+      font-size: 45px;
+      .right__repos {
+        .repos__number {
+          font-style: italic;
+        }
+      }
+      .right__followers {
+        .followers__number {
+          font-style: italic;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    margin-top: 2em;
+    .profile__header {
+      .header__title {
+        font-size: 60px;
+      }
+      margin-bottom: 10px;
+    }
+    .profile__card {
+      width: 90%;
+      transition: 0.3s;
+      text-align: left;
+      padding: 20px;
+      .card__left {
+        width: 100%;
+        .left__avatar {
+          padding: 50px;
+        }
+        .left__text {
+          font-size: 20px;
+        }
+      }
+      .card__right {
+        width: 90%;
+        font-size: 25px;
+        .right__repos {
+          display: inline-block;
+          width: 50%;
+          .repos__number {
             font-style: italic;
-          }
-          .repos__number{
-            font-weight: 700;
-
+            text-align: center;
           }
         }
-        .right__followers{
-          font-size: 45px;
-          .followers__title{
-            font-weight: 700;
+        .right__followers {
+          display: inline-block;
+          width: 50%;
+          .followers__number {
             font-style: italic;
-          }
-          .followers__number{
-            font-weight: 700;
+            text-align: center;
 
           }
         }
       }
     }
   }
+}
