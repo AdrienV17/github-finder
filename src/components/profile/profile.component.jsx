@@ -5,8 +5,9 @@ import { createStructuredSelector } from "reselect";
 import { selectProfileEssentials } from "../../redux/profile/profile.selectors";
 
 const Profile = ({ profile }) => {
+  const url = `https://github.com/${profile.username}`;
   return (
-    <div className="homepage__profile">
+    <a className="homepage__profile" href={url} target="_blank" rel="noopener noreferrer">
       <div className="profile__header">
         <div className="header__title">{profile.username}</div>
       </div>
@@ -36,7 +37,7 @@ const Profile = ({ profile }) => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 const mapStateToProps = createStructuredSelector({
